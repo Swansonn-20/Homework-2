@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 2</title>
+  </head>
+  <body>
+    <h1>Dado Tea Lunch Special</h1>
+    <p>Monday trough Firday</p>
+    <p>11AM - 3PM</p>
+    <p>$9.95 plus tax</p>
+
+    <p>Includes sandwich, snack and drink.</p>
+    <form>
+      <!--Order Informations-->
+      <fieldset>
+        <legend>Order Information</legend>
+        <label>Name: <input type="text" name="name" /></label> <br />
+        <br />
+        <input type="radio" name="orderType" /> Here
+        <input type="radio" name="orderType" />To Go
+      </fieldset>
+      <br />
+      <!--Sandwiches Informations-->
+      <fieldset>
+        <legend>Sandwiches</legend>
+        <h2>Monday</h2>
+        <input type="radio" name="sandwiches" value="tomato mozzarella" />Tomato
+        Mozzarella <br />
+        <input type="radio" name="sandwiches" value="chicken salad" />Chicken
+        Salad
+
+        <h2>Tuesday</h2>
+        <input type="radio" name="sandwiches" value="greensaladwrap" />Greek
+        Salad Wrap <br />
+        <input type="radio" name="sandwiches" value="tofuwrap" /> Tofu Wrap
+
+        <h2>Wednesday</h2>
+        <input type="radio" name="sandwich" value="redpepperHummus" /> Red
+        Pepper Hummus <br />
+        <input type="radio" name="sandwich" value="roastedTurkey" /> Roasted
+        Turkey
+
+        <h2>Thursday</h2>
+        <input type="radio" name="sandwiches" value="cucumberhummuswrap" />
+        Cucummber Hummus Wrap <br />
+        <input type="radio" name="sandwiches" value="eggsalad" /> Egg Salad
+
+        <h2>Friday</h2>
+        <input type="radio" name="sandwich" value="tofuWrapFri" /> Tofu Wrap
+        <br />
+        <input type="radio" name="sandwich" value="tunaSalad" /> Tuna Salad
+        <br />
+        <hr />
+        <input type="checkbox" name="customPita" value="yes" />
+        Custom Pita Bread <b>(+75¢ extra)</b>
+      </fieldset>
+      <!--Snacks Informations-->
+      <fieldset>
+        <legend>Snack</legend>
+        <h2>Snacks:</h2>
+        <input type="radio" name="snack" value="Apple" />Apple <br />
+        <input type="radio" name="snack" value="bannana" /> Bannana <br />
+        <input type="radio" name="snack" value="potatochips" /> Potato Chips
+      </fieldset>
+      <!--Drinks Informations-->
+      <fieldset>
+        <legend>Drink</legend>
+        <br />
+        <label for="drinkSelect">Drink:</label>
+        <select name="drink" id="drinkSelect">
+          <option value="hottea">Hot Tea</option>
+          <option value="icetea">Ice Tea</option>
+          <option value="Coffee">Coffee</option>
+        </select>
+        <br />
+        <br />
+        <input type="checkbox" name="largeDrink" value="yes" /> Large drink
+        <b>(+75¢ extra)</b>
+      </fieldset>
+      <br />
+      <button type="submit">Place Order</button>
+    </form>
+  </body>
+</html>
